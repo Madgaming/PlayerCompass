@@ -30,6 +30,7 @@ public class PlayerListener implements Listener {
             }
             PlayerCompass.targets.put(target, player);
             player.setCompassTarget(player.getLocation());
+            player.sendMessage("§a  Compass pointing to " + target.getDisplayName());
         }
     }
     
